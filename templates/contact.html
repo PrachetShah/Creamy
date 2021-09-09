@@ -3,11 +3,55 @@
 {% block title %}Contact{% endblock title %}
 
 {% block body %}
-    <div class="container-fluid p-0">
-        <img src="static/contact.jfif" width=100% height=600>
+    <div class="container-fluid p-0" style="position: relative; text-align: center; color: white;">
+        <img src="static/contact2.jfif" width=100% height=600>
+        <div class="centered fs-1 fw-bold" style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 25px;
+            background: white;
+            border-left-width: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 2px;
+            color: black">Contact Us</div>
+        <div class="centered fs-1 fw-normal" style="
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 25px;
+            background: black;
+            border-left-width: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 2px;">Here to answer all you Queries</div>
     </div>
     <hr>
-    <h3 style="text-align:center" class="p-2">Contact Us</h3>
-    <hr>
+    <h3 style="text-align:center" class="p-2">Contact Form Below:</h3>
+    <hr class="my-0">
+    
+    {% comment %} Form Container {% endcomment %}
+    <div style="background-color:#CEE5D0" style="width:100%">
+        <div class="container pt-3 mt-3 my-4 pt-4" style="width:50%;">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label fw-bold">Enter your Name</label>
+                <input type="name" class="form-control" id="name" name="name" placeholder="Your Name">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label fw-bold">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3 py-4">
+                <label for="exampleFormControlTextarea1" class="form-label fw-bold">Enter your message here</label>
+                <textarea class="form-control" style="margin-top: 0px; margin-bottom: 0px; height: 129px;" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+
+    {% comment %} Footer {% endcomment %}
 
 {% endblock body %}
