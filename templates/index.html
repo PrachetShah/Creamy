@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<div class="container-fluid p-0">
+ <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/static/5.jfif" class="d-block w-60" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/2.jfif" class="d-block w-60" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/1.jfif" class="d-block w-60" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<hr>
+<h3 style="text-align:center" class="p-2">Welcome to our Company</h3>
+<hr>
+<div class="container">
+  <div class="container row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-4">
+      <div class="col">
+        <div class="card shadow-sm">
+          {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+          <img src="/static/4.jfif" class="bd-placeholder-img card-img-top" width="100%" height="200" alt="...">
+          <div class="card-body">
+            <p class="card-text" height="200">Along with Ice-Creams we also have one in a kind Cupcakes and Cakes which will delight your mouth and mood.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+          <img src="/static/hygiene.jfif" class="bd-placeholder-img card-img-top" width="100%" height="200" alt="...">
+          <div class="card-body">
+            <p class="card-text" height="200">While serving delicacies we take into consideration that complete Hygiene is followed so you can enjoy your quality time.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+          <img src="/static/coffee.jfif" class="bd-placeholder-img card-img-top" width="100%" height="200" alt="...">
+          <div class="card-body">
+            <p class="card-text" height="200">Relax and concentrate on your work while sipping premium quality Coffee made from world's finest coffee beans from Africa.</p>
+          </div>
+        </div>
+  </div>
+</div
+{% endblock body %}
