@@ -34,6 +34,9 @@
     <hr class="my-0">
     
     {% comment %} Form Container {% endcomment %}
+<form method="post" action="/contact">    
+{% comment %} Add csrf token to submit forms in django {% endcomment %}
+{% csrf_token %}
     <div style="background-color:#CEE5D0" style="width:100%">
         <div class="container pt-3 mt-3 my-4 pt-4" style="width:50%;">
             <div class="mb-3">
@@ -43,14 +46,16 @@
 
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label fw-bold">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
             </div>
-            <div class="mb-3 py-4">
+            <div class="m2-3">
                 <label for="exampleFormControlTextarea1" class="form-label fw-bold">Enter your message here</label>
-                <textarea class="form-control" style="margin-top: 0px; margin-bottom: 0px; height: 129px;" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" style="margin-top: 0px; margin-bottom: 0px; height: 129px;" id="text" name="text" rows="3"></textarea>
             </div>
+            <button type="submit" class="btn btn-success my-4">Submit</button>
         </div>
     </div>
+</form
 
     {% comment %} Footer {% endcomment %}
 
